@@ -7,7 +7,7 @@ Copyright: GPL
 Source: ftp://sunsite.unc.edu/pub/Linux/Incoming/tree-1.2.tgz
 Patch: tree-1.0-misc.patch
 Prefix: /usr
-BuildRoot: /var/tmp/tree-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The tree utility recursively displays the contents of directories in a
