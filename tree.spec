@@ -38,11 +38,10 @@ ve dosyalarla beraber listeler.
 
 %build
 rm -f tree
-%{__make} CFLAGS="$RPM_OPT_FLAGS" 
+%{__make} CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="%{!?debug:-s}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_prefix}/{bin,man/man1}
 
 %{__make} install \
 	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
