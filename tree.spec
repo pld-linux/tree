@@ -1,4 +1,4 @@
-%define		pre	b2
+%define		pre	b3
 Summary:	A utility which displays a tree view of the contents of directories
 Summary(de):	Druckt eine Ansicht einer Dateihierarchie
 Summary(fr):	Affiche une arborescence de répertoires
@@ -10,8 +10,8 @@ Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}%{pre}.tgz
-# Source0-md5:	efa89cc89109f578737f31919d37a3d4
-Patch0:		%{name}-build.patch
+# Source0-md5:	93110789bcd48f633c2ea1d1b3835dac
+Patch1:		%{name}-gcc34.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,10 +41,10 @@ ve dosyalarla beraber listeler.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch1 -p1
 
 %build
-rm -f tree
+rm -f tree-1.4
 %{__make} CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}"
 
