@@ -6,7 +6,7 @@ Summary(pl):	Narzêdzie wy¶wietlaj±ce zawarto¶æ katalogów w postaci drzewka
 Summary(tr):	Bir dizin aðacýnýn görünümünü listeler
 Name:		tree
 Version:	1.4
-Release:	1.%{pre}.1
+Release:	1.%{pre}.2
 License:	GPL
 Group:		Applications/File
 Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}%{pre}.tgz
