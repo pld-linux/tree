@@ -4,7 +4,7 @@ Summary(fr):	Affiche une arborescence de répertoires
 Summary(tr):	Bir dizin aðacýnýn görünümünü listeler
 Name:		tree
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/File
 Group(de):	Applikationen/Datei
@@ -38,7 +38,8 @@ ve dosyalarla beraber listeler.
 
 %build
 rm -f tree
-%{__make} CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="%{!?debug:-s}"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{debug:-O -g}" \
+	LDFLAGS="%{!?debug:-s}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,8 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
 	MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf README \
-	$RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
