@@ -1,6 +1,7 @@
 Summary:	A utility which displays a tree view of the contents of directories
 Summary(de):	Druckt eine Ansicht einer Dateihierarchie 
 Summary(fr):	Affiche une arborescence de répertoires
+Summary(pl):	Narzêdzie wy¶wietlaj±ce zawarto¶æ katalogów w postaci drzewka
 Summary(tr):	Bir dizin aðacýnýn görünümünü listeler
 Name:		tree
 Version:	1.3
@@ -28,6 +29,10 @@ Ce programme est à la base un portage sous UNIX de l'utilitaire DOS
 'tree', qui affiche l'arbrescence d'un répertoire spécifié. Il inclue
 un support pour des listings de style 'color ls'.
 
+%description -l pl
+Narzêdzie tree rekursywnie wy¶wietla zawarto¶æ katalogów w formacie
+drzewka. Jest to uniksowy port programu tree znanego z DOS.
+
 %description -l tr
 Bu program kullanýþlý bir DOS aracý olan tree'nin UNIX'e taþýnmýþ
 biçimidir. Bir dizin aðacýnýn görünümünü içinde yer alan altdizinler
@@ -39,7 +44,7 @@ ve dosyalarla beraber listeler.
 %build
 rm -f tree
 %{__make} CFLAGS="%{rpmcflags}" \
-	LDFLAGS="%{!?debug:-s}"
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
