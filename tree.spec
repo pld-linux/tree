@@ -1,5 +1,5 @@
 Summary:	A utility which displays a tree view of the contents of directories
-Summary(de):	Druckt eine Ansicht einer Dateihierarchie 
+Summary(de):	Druckt eine Ansicht einer Dateihierarchie
 Summary(fr):	Affiche une arborescence de répertoires
 Summary(pl):	Narzêdzie wy¶wietlaj±ce zawarto¶æ katalogów w postaci drzewka
 Summary(tr):	Bir dizin aðacýnýn görünümünü listeler
