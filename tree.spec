@@ -10,6 +10,7 @@ Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}%{pre}.tgz
+# Source0-md5:	efa89cc89109f578737f31919d37a3d4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
