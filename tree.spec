@@ -38,7 +38,7 @@ ve dosyalarla beraber listeler.
 
 %build
 rm -f tree
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}" \
+%{__make} CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{!?debug:-s}"
 
 %install
