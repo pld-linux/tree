@@ -1,14 +1,15 @@
+%define pre   b2
 Summary:	A utility which displays a tree view of the contents of directories
 Summary(de):	Druckt eine Ansicht einer Dateihierarchie
 Summary(fr):	Affiche une arborescence de répertoires
 Summary(pl):	Narzêdzie wy¶wietlaj±ce zawarto¶æ katalogów w postaci drzewka
 Summary(tr):	Bir dizin aðacýnýn görünümünü listeler
 Name:		tree
-Version:	1.3
-Release:	3
+Version:	1.4
+Release:	1
 License:	GPL
 Group:		Applications/File
-Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}.tgz
+Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}%{pre}.tgz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
