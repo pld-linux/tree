@@ -5,7 +5,7 @@ Summary(pl):	Narzêdzie wy¶wietlaj±ce zawarto¶æ katalogów w postaci drzewka
 Summary(tr):	Bir dizin aðacýnýn görünümünü listeler
 Name:		tree
 Version:	1.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/File
 Group(de):	Applikationen/Datei
