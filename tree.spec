@@ -1,9 +1,9 @@
 %define		pre	b3
 Summary:	A utility which displays a tree view of the contents of directories
-Summary(de):	Druckt eine Ansicht einer Dateihierarchie
-Summary(fr):	Affiche une arborescence de répertoires
-Summary(pl):	Narzêdzie wy¶wietlaj±ce zawarto¶æ katalogów w postaci drzewka
-Summary(tr):	Bir dizin ağacının görünümünü listeler
+Summary(de.UTF-8):   Druckt eine Ansicht einer Dateihierarchie
+Summary(fr.UTF-8):   Affiche une arborescence de rÃ©pertoires
+Summary(pl.UTF-8):   NarzÄ™dzie wyÅ›wietlajÄ…ce zawartoÅ›Ä‡ katalogÃ³w w postaci drzewka
+Summary(tr.UTF-8):   Bir dizin aÄŸacÄ±nÄ±n gÃ¶rÃ¼nÃ¼mÃ¼nÃ¼ listeler
 Name:		tree
 Version:	1.4
 Release:	1.%{pre}.2
@@ -19,24 +19,24 @@ The tree utility recursively displays the contents of directories in a
 tree-like format. Tree is basically a UNIX port of the tree DOS
 utility.
 
-%description -l de
-Dieses Programm ist im Prinzip ein UNIX-Port des äußerst praktischen
-DOS-Utility-Programms tree, das eine Darstellung des gewünschten
-Verzeichnisbaums ausgibt, zusammen mit den Dateien, die ihm gehören.
-Beinhaltet auch Unterstützung für 'color ls'-artige Auflistungen.
+%description -l de.UTF-8
+Dieses Programm ist im Prinzip ein UNIX-Port des Ã¤uÃŸerst praktischen
+DOS-Utility-Programms tree, das eine Darstellung des gewÃ¼nschten
+Verzeichnisbaums ausgibt, zusammen mit den Dateien, die ihm gehÃ¶ren.
+Beinhaltet auch UnterstÃ¼tzung fÃ¼r 'color ls'-artige Auflistungen.
 
-%description -l fr
-Ce programme est à la base un portage sous UNIX de l'utilitaire DOS
-'tree', qui affiche l'arbrescence d'un répertoire spécifié. Il inclue
+%description -l fr.UTF-8
+Ce programme est Ã  la base un portage sous UNIX de l'utilitaire DOS
+'tree', qui affiche l'arbrescence d'un rÃ©pertoire spÃ©cifiÃ©. Il inclue
 un support pour des listings de style 'color ls'.
 
-%description -l pl
-Narzêdzie tree rekursywnie wy¶wietla zawarto¶æ katalogów w formacie
+%description -l pl.UTF-8
+NarzÄ™dzie tree rekursywnie wyÅ›wietla zawartoÅ›Ä‡ katalogÃ³w w formacie
 drzewka. Jest to uniksowy port programu tree znanego z DOS.
 
-%description -l tr
-Bu program kullanışlı bir DOS aracı olan tree'nin UNIX'e taşınmış
-biçimidir. Bir dizin ağacının görünümünü içinde yer alan altdizinler
+%description -l tr.UTF-8
+Bu program kullanÄ±ÅŸlÄ± bir DOS aracÄ± olan tree'nin UNIX'e taÅŸÄ±nmÄ±ÅŸ
+biÃ§imidir. Bir dizin aÄŸacÄ±nÄ±n gÃ¶rÃ¼nÃ¼mÃ¼nÃ¼ iÃ§inde yer alan altdizinler
 ve dosyalarla beraber listeler.
 
 %prep
