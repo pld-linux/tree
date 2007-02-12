@@ -1,9 +1,9 @@
 %define		pre	b3
 Summary:	A utility which displays a tree view of the contents of directories
-Summary(de.UTF-8):   Druckt eine Ansicht einer Dateihierarchie
-Summary(fr.UTF-8):   Affiche une arborescence de répertoires
-Summary(pl.UTF-8):   Narzędzie wyświetlające zawartość katalogów w postaci drzewka
-Summary(tr.UTF-8):   Bir dizin ağacının görünümünü listeler
+Summary(de.UTF-8):	Druckt eine Ansicht einer Dateihierarchie
+Summary(fr.UTF-8):	Affiche une arborescence de répertoires
+Summary(pl.UTF-8):	Narzędzie wyświetlające zawartość katalogów w postaci drzewka
+Summary(tr.UTF-8):	Bir dizin ağacının görünümünü listeler
 Name:		tree
 Version:	1.4
 Release:	1.%{pre}.2
