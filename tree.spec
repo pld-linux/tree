@@ -4,13 +4,12 @@ Summary(fr.UTF-8):	Affiche une arborescence de répertoires
 Summary(pl.UTF-8):	Narzędzie wyświetlające zawartość katalogów w postaci drzewka
 Summary(tr.UTF-8):	Bir dizin ağacının görünümünü listeler
 Name:		tree
-Version:	1.5.3
+Version:	1.6.0
 Release:	1
 License:	GPL
 Group:		Applications/File
-Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}.tgz
-# Source0-md5:	c07ce9065667a23f27aca4de8ecccb10
-Patch1:		%{name}-gcc34.patch
+Source0:	http://mama.indstate.edu/users/ice/tree/src/%{name}-%{version}.tgz
+# Source0-md5:	04e967a3f4108d50cde3b4b0e89e970a
 URL:		http://mama.indstate.edu/users/ice/tree/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,7 +40,6 @@ ve dosyalarla beraber listeler.
 
 %prep
 %setup -q
-%patch1 -p1
 
 %build
 rm -f tree-1.4
