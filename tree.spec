@@ -5,7 +5,7 @@ Summary(pl.UTF-8):	Narzędzie wyświetlające zawartość katalogów w postaci d
 Summary(tr.UTF-8):	Bir dizin ağacının görünümünü listeler
 Name:		tree
 Version:	1.6.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/File
 Source0:	http://mama.indstate.edu/users/ice/tree/src/%{name}-%{version}.tgz
