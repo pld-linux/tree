@@ -4,12 +4,12 @@ Summary(fr.UTF-8):	Affiche une arborescence de répertoires
 Summary(pl.UTF-8):	Narzędzie wyświetlające zawartość katalogów w postaci drzewka
 Summary(tr.UTF-8):	Bir dizin ağacının görünümünü listeler
 Name:		tree
-Version:	1.6.0
-Release:	2
-License:	GPL
+Version:	1.7.0
+Release:	1
+License:	GPL v2+
 Group:		Applications/File
-Source0:	http://mama.indstate.edu/users/ice/tree/src/%{name}-%{version}.tgz
-# Source0-md5:	04e967a3f4108d50cde3b4b0e89e970a
+Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}.tgz
+# Source0-md5:	abe3e03e469c542d8e157cdd93f4d8a6
 URL:		http://mama.indstate.edu/users/ice/tree/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,13 +42,12 @@ ve dosyalarla beraber listeler.
 %setup -q
 
 %build
-rm -f tree-1.4
-%{__make} CFLAGS="%{rpmcflags}" \
+%{__make} \
+	CFLAGS="%{rpmcflags} $(getconf LFS_CFLAGS)" \
 	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
 	MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1
@@ -60,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/tree
-%{_mandir}/man1/*
+%{_mandir}/man1/tree.1*
