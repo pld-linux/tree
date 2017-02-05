@@ -8,7 +8,7 @@ Version:	1.7.0
 Release:	1
 License:	GPL v2+
 Group:		Applications/File
-Source0:	ftp://mama.indstate.edu/linux/tree/%{name}-%{version}.tgz
+Source0:	http://mama.indstate.edu/users/ice/tree/src/%{name}-%{version}.tgz
 # Source0-md5:	abe3e03e469c542d8e157cdd93f4d8a6
 URL:		http://mama.indstate.edu/users/ice/tree/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
