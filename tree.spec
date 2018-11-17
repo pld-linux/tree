@@ -43,6 +43,7 @@ ve dosyalarla beraber listeler.
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} $(getconf LFS_CFLAGS)" \
 	LDFLAGS="%{rpmldflags}"
 
