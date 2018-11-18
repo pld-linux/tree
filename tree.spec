@@ -5,7 +5,7 @@ Summary(pl.UTF-8):	Narzędzie wyświetlające zawartość katalogów w postaci d
 Summary(tr.UTF-8):	Bir dizin ağacının görünümünü listeler
 Name:		tree
 Version:	1.8.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/File
 Source0:	http://mama.indstate.edu/users/ice/tree/src/%{name}-%{version}.tgz
@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc CHANGES INSTALL LICENSE README TODO
 %attr(755,root,root) %{_bindir}/tree
 %{_mandir}/man1/tree.1*
