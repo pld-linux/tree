@@ -4,13 +4,14 @@ Summary(fr.UTF-8):	Affiche une arborescence de répertoires
 Summary(pl.UTF-8):	Narzędzie wyświetlające zawartość katalogów w postaci drzewka
 Summary(tr.UTF-8):	Bir dizin ağacının görünümünü listeler
 Name:		tree
-Version:	1.8.0
-Release:	2
+Version:	2.3.1
+Release:	1
 License:	GPL v2+
 Group:		Applications/File
-Source0:	http://mama.indstate.edu/users/ice/tree/src/%{name}-%{version}.tgz
-# Source0-md5:	715191c7f369be377fc7cc8ce0ccd835
-URL:		http://mama.indstate.edu/users/ice/tree/
+#Source0Download: https://github.com/Old-Man-Programmer/tree/tags
+Source0:	https://github.com/Old-Man-Programmer/tree/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	b684fd6232235041ed5f6e23860bd4d0
+URL:		https://github.com/Old-Man-Programmer/tree
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,8 +51,8 @@ ve dosyalarla beraber listeler.
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
-	BINDIR=$RPM_BUILD_ROOT%{_bindir} \
-	MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1
+	DESTDIR=$RPM_BUILD_ROOT%{_bindir} \
+	MANDIR=$RPM_BUILD_ROOT%{_mandir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
